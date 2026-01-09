@@ -1,0 +1,44 @@
+{
+  "name": "ideastockexchange",
+  "version": "1.0.0",
+  "description": "ReasonRank: PageRank for Truth - A multi-platform application for evidence-based argument evaluation",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "npm run build --workspaces",
+    "test": "npm run test --workspaces",
+    "dev:api": "npm run dev -w @ideastockexchange/api",
+    "dev:web": "npm run dev -w @ideastockexchange/web",
+    "dev:mobile": "npm run dev -w @ideastockexchange/mobile",
+    "lint": "eslint . --ext .ts,.tsx",
+    "format": "prettier --write \"**/*.{ts,tsx,json,md}\""
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.0",
+    "@typescript-eslint/eslint-plugin": "^6.13.0",
+    "@typescript-eslint/parser": "^6.13.0",
+    "eslint": "^8.54.0",
+    "prettier": "^3.1.0",
+    "typescript": "^5.3.3"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=9.0.0"
+  },
+  "keywords": [
+    "reasoning",
+    "argumentation",
+    "evidence",
+    "truth-score",
+    "debate",
+    "policy-analysis"
+  ],
+  "author": "Idea Stock Exchange",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/myklob/ideastockexchange"
+  }
+}
