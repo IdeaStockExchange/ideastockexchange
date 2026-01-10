@@ -1,0 +1,257 @@
+/* Wikipedia-inspired styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Liberation Sans', sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #202122;
+  background-color: #f8f9fa;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  min-height: 100vh;
+}
+
+/* Header styling - Wikipedia-like */
+.header {
+  background-color: #f8f9fa;
+  border-bottom: 1px solid #a2a9b1;
+  padding: 10px 20px;
+}
+
+.site-title {
+  font-size: 24px;
+  font-weight: normal;
+  color: #202122;
+}
+
+.site-subtitle {
+  font-size: 12px;
+  color: #54595d;
+  font-style: italic;
+}
+
+/* Main content area */
+.content {
+  padding: 20px;
+}
+
+.page-title {
+  font-size: 28px;
+  font-weight: normal;
+  border-bottom: 1px solid #a2a9b1;
+  margin-bottom: 20px;
+  padding-bottom: 8px;
+  font-family: 'Linux Libertine', 'Georgia', 'Times', serif;
+}
+
+/* View toggle */
+.view-toggle {
+  background-color: #f8f9fa;
+  border: 1px solid #a2a9b1;
+  padding: 10px 15px;
+  margin-bottom: 20px;
+  border-radius: 2px;
+}
+
+.view-toggle label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.view-toggle input[type="checkbox"] {
+  margin-right: 8px;
+  cursor: pointer;
+}
+
+/* Input form */
+.input-section {
+  background-color: #f8f9fa;
+  border: 1px solid #a2a9b1;
+  padding: 15px;
+  margin-bottom: 25px;
+  border-radius: 2px;
+}
+
+.input-section h2 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #202122;
+}
+
+.input-group {
+  margin-bottom: 15px;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 600;
+  font-size: 13px;
+}
+
+.input-group select,
+.input-group textarea,
+.input-group input[type="text"] {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #a2a9b1;
+  border-radius: 2px;
+  font-family: inherit;
+  font-size: 13px;
+}
+
+.input-group textarea {
+  min-height: 80px;
+  resize: vertical;
+}
+
+.button {
+  background-color: #3366cc;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  font-size: 13px;
+  cursor: pointer;
+  border-radius: 2px;
+  font-weight: 600;
+}
+
+.button:hover {
+  background-color: #2855a8;
+}
+
+/* Arguments display */
+.arguments-section {
+  margin-top: 30px;
+}
+
+.section-header {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #a2a9b1;
+  padding-bottom: 5px;
+}
+
+.argument-card {
+  background-color: #ffffff;
+  border: 1px solid #a2a9b1;
+  border-left: 4px solid #3366cc;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 2px;
+}
+
+.argument-card.disagree {
+  border-left-color: #d33;
+}
+
+.argument-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  margin-bottom: 10px;
+}
+
+.argument-type {
+  display: inline-block;
+  padding: 3px 8px;
+  border-radius: 2px;
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.argument-type.agree {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.argument-type.disagree {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+.argument-text {
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 10px;
+  color: #202122;
+}
+
+/* Advanced details */
+.advanced-details {
+  background-color: #f8f9fa;
+  border-top: 1px solid #e0e0e0;
+  padding: 10px;
+  margin-top: 10px;
+  font-size: 12px;
+  color: #54595d;
+  font-family: 'Courier New', monospace;
+}
+
+.advanced-details .detail-row {
+  margin-bottom: 4px;
+}
+
+.advanced-details .detail-label {
+  font-weight: 600;
+  display: inline-block;
+  width: 120px;
+}
+
+/* Subject selector */
+.subject-info {
+  background-color: #eaecf0;
+  border: 1px solid #a2a9b1;
+  padding: 12px;
+  margin-bottom: 20px;
+  border-radius: 2px;
+}
+
+.subject-info h3 {
+  font-size: 16px;
+  margin-bottom: 8px;
+  color: #202122;
+}
+
+.subject-info p {
+  font-size: 13px;
+  color: #54595d;
+  line-height: 1.5;
+}
+
+/* Empty state */
+.empty-state {
+  text-align: center;
+  padding: 40px;
+  color: #72777d;
+  font-style: italic;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .content {
+    padding: 15px;
+  }
+
+  .page-title {
+    font-size: 22px;
+  }
+
+  .container {
+    max-width: 100%;
+  }
+}
