@@ -11,10 +11,15 @@ pnpm-lock.yaml
 .env.test
 .env.production
 
+# Database files
+*.db
+*.db-journal
+
 # Build outputs
 dist/
 build/
 *.log
+npm-debug.log
 
 # IDE
 .vscode/
